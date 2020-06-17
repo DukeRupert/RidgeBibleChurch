@@ -1,0 +1,27 @@
+<script>
+	import AboutUs from '../components/AboutUs.svelte';
+  import Footer from '../components/Footer.svelte';
+</script>
+
+<style>
+
+  div {
+    padding: 2em;
+  }
+
+  img {
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+
+</style>
+
+<svelte:head>
+  <title>The Ridge Bible Church</title>
+</svelte:head>
+
+<div>
+  <img src="RidgeLogo.svg" alt='The Ridge Bible Church logo'/>
+  <AboutUs />
+</div>
+<Footer />
