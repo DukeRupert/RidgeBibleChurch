@@ -1,6 +1,6 @@
 <script>
   import NavItem from "./navItem.svelte";
-  import Dropdown from './dropdown.svelte'
+  import Dropdown from './dropdown.svelte';
   let width;
   let mobile = false;
   $: if (width < 450) {
@@ -43,6 +43,8 @@
 <nav>
   <NavItem title="Staff" route='/staff'/>
   <NavItem title="Giving" route='/giving'/>
-  <NavItem title="About Us" route='/about'/>
+  <NavItem title="Sermons" route='/sermons'/>
+  <NavItem title="Blog" route='/blog'/>
+  <NavItem title="Statement of Faith" route='/statement'/>
 </nav>
 {/if}

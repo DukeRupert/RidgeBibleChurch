@@ -56,10 +56,12 @@
     <li>
         <button on:click={toggle}><Fa icon={faBars} size='2x'/></button>
         <div in:slide="{{duration: 500, easing: sineIn }}">
-            <DropdownItem title='MENU' route='/menu' onClick={toggle}/>
-            <DropdownItem title='LOCATIONS' route='/locations' onClick={toggle}/>
-            <DropdownItem title='ABOUT US' route='/about' onClick={toggle}/>
-            <DropdownItem title='ORDER ONLINE' route='/menu' onClick={toggle}/>
+            <DropdownItem title='Staff' route='/staff' onClick={toggle}/>
+            <DropdownItem title='Giving' route='/giving' onClick={toggle}/>
+            <DropdownItem title='Sermons' route='/sermons' onClick={toggle}/>
+            <DropdownItem title='Blog' route='/blog' onClick={toggle}/>
+            <DropdownItem title='Statement of Faith' route='/statement' onClick={toggle}/>
+
         </div>
     </li>
 {:else}
