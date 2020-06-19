@@ -124,10 +124,6 @@
 		align-items: flex-start;
 	}
 
-	div {
-		align-items: center;
-	}
-
 	h1 {
 		font-size: 4em;
 	}

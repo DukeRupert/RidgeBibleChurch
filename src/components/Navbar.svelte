@@ -1,4 +1,5 @@
 <script>
+  import Logo from './Logo.svelte';
   import NavItem from "./navItem.svelte";
   import Dropdown from './dropdown.svelte';
   let width;
@@ -37,6 +38,7 @@
 
 {#if mobile}
 <nav>
+  <Logo />
   <Dropdown />
 </nav>
 {:else}
