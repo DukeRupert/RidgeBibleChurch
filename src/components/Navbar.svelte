@@ -1,6 +1,6 @@
 <script>
   import Logo from './Logo.svelte';
-  import NavItem from "./navItem.svelte";
+  import NavItem from "./NavItem.svelte";
   import Dropdown from './dropdown.svelte';
   let width;
   let mobile = false;
