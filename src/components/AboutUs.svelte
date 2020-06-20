@@ -4,11 +4,23 @@
 </script>
 
 <style>
-    /* 1em = 14px */
+    /* 1em = 16px */
+
     div {
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
     }
+
+    .col {
+        width: 25%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    
 
     h1 {
         font-size: 1.5em;
@@ -36,28 +48,20 @@
         margin-block-start: 0;
     }
 
-    .col {
-        width: 100%;
-        margin: 2em 0;
-    }
-
-    /* Larger screens only */
-    /* 1em = 16px */
-    @media only screen and (min-width: 400px) {
+    /* Smaller screens only */
+    /* 1em = 14px */
+    @media only screen and (max-width: 475px) {
 
         div {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
         }
 
         .col {
-            width: 25%;
-            padding: 1em;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-content: flex-start;
+            width: 100%;
+            margin: 2em 0;
+            padding: 0;
+            align-content: unset;
         }
     }
 </style>
