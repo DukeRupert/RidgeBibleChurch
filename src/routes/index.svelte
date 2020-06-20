@@ -1,8 +1,5 @@
 <script>
 	import AboutUs from '../components/AboutUs.svelte';
-  import Footer from '../components/Footer.svelte';
-
-  export let segment;
 
   // Animations do not play on initial load by default. Condition change used to trigger logo animation.
   let condition = false;
@@ -30,4 +27,3 @@
   <img src="RidgeLogo.svg" alt='The Ridge Bible Church logo'/>
   <AboutUs />
 </div>
-<Footer />

@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
-	import NavbarHome from '../components/NavbarHome.svelte'
+	import NavbarHome from '../components/NavbarHome.svelte';
+	import Footer from '../components/Footer.svelte';
 	export let segment;
 </script>
 
@@ -22,3 +23,5 @@
 <main>
 	<slot></slot>
 </main>
+ 
+<Footer />
