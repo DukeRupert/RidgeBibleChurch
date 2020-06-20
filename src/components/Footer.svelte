@@ -1,18 +1,28 @@
 <script>
     import Fa from 'svelte-fa';
-    import { faPhone } from '@fortawesome/free-solid-svg-icons';
+    import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <style>
     div {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        height: 25vh;
         padding: 1em;
-        background: rgba(0, 0, 0, 0.5);
+        background: #2f2f2f;
+    }
+
+    p {
+        color: white;
+        margin: 0.5em 0.5em;
     }
 </style>
 
 <div>
-    <Fa icon={faPhone} fw primaryColor="gold" style="background: black" />
+    <p>10609 234th St E | Graham, WA 98338</p>
+    <p>(253) 847-2223 | info@theridgebiblechurch.com</p>
+    <p><Fa icon={faFacebookSquare} size='2x' /></p>
+    <p>&copy; 2020 The Ridge Bible Church</p>
 </div>
