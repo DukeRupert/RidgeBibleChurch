@@ -1,7 +1,25 @@
+<script>
+	import Fa from 'svelte-fa';
+    import { faPaypal } from '@fortawesome/free-brands-svg-icons';
+</script>
+
+<style>
+	div {
+		padding: 2em;
+	}
+
+	img {
+		width: 100%;
+	}
+</style>
+
 <svelte:head>
 	<title>Giving</title>
 </svelte:head>
 
-<h1>This is the giving page</h1>
-
-<p>There's not much here.</p>
+<img src='/mtRange.jpg' alt='A mountain range.'/>
+<div>
+	<h2>Thank you for your generosity.</h2>
+	<p>Please use any of the methods provided below: </p>
+	<button><Fa icon={faPaypal} size='2x' />Paypal</button>
+</div>

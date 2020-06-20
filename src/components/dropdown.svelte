@@ -4,7 +4,10 @@
     import DropdownItem from './dropdownItem.svelte';
     import { dropdownOpen } from '../store';
     import { slide } from 'svelte/transition';
-	import { sineIn } from 'svelte/easing';
+    import { sineIn } from 'svelte/easing';
+    
+    import { fly } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
     let dropdownOpen_value = false;
 
@@ -41,10 +44,10 @@
         position: fixed;
         overflow: hidden;
         z-index: 99;
-        top: 80px;
+        top: 60px;
         left: 0;
         width:100%;
-        height: calc(100% - 80px);
+        height: calc(100% - 60px);
         box-sizing: border-box;
         border-top: 2px black solid;
         background-color: white;
@@ -55,7 +58,7 @@
 {#if dropdownOpen_value}
     <li>
         <button on:click={toggle}><Fa icon={faBars} size='2x'/></button>
-        <div in:slide="{{duration: 500, easing: sineIn }}">
+        <div in:fly="{{duration: 500, x: 500, opacity: 0.5, easing: sineIn}}">
             <DropdownItem title='Staff' route='/staff' onClick={toggle}/>
             <DropdownItem title='Giving' route='/giving' onClick={toggle}/>
             <DropdownItem title='Sermons' route='/sermons' onClick={toggle}/>
