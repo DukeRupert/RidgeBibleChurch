@@ -21,8 +21,8 @@
   }
 
   img {
-    height: 60px;
-    width: 120px;
+    max-height: 80px;
+    width: 75vw;
   }
 
   .title {
@@ -43,7 +43,7 @@
 
 <li>
   <a href="/" on:click={closeDropdown}>
-    <img src='RidgeLogo.svg' />
+    <img src='LogoMobile.svg' />
   </a>
   <a href="/" on:click={closeDropdown} class="title">{title}</a>
 </li>

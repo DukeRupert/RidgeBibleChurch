@@ -14,7 +14,7 @@
 
 <style>
   nav {
-    height: 60px;
+    height: 80px;
     background-color: white;
     color: black;
     display: flex;
@@ -43,6 +43,7 @@
 </nav>
 {:else}
 <nav>
+  <NavItem title='Home' route='/'/>
   <NavItem title="Staff" route='/staff'/>
   <NavItem title="Giving" route='/giving'/>
   <NavItem title="Sermons" route='/sermons'/>

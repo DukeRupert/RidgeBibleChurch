@@ -44,7 +44,7 @@
         position: fixed;
         overflow: hidden;
         z-index: 99;
-        top: 60px;
+        top: 80px;
         left: 0;
         width:100%;
         height: calc(100% - 60px);
