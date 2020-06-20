@@ -10,6 +10,7 @@
     else {
       mobile = false;
     }
+  
   export let segment;
 </script>
 
@@ -39,12 +40,10 @@
 
 {#if mobile}
   <nav>
-    <Logo />
     <Dropdown />
   </nav>
 {:else}
 <nav>
-  <NavItem title='Home' route='/'/>
   <NavItem title="Staff" route='/staff'/>
   <NavItem title="Giving" route='/giving'/>
   <NavItem title="Sermons" route='/sermons'/>

@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
-
+	import NavbarHome from '../components/NavbarHome.svelte'
+	export let segment;
 </script>
 
 <style>
@@ -12,7 +13,11 @@
 	}
 </style>
 
+{#if segment === undefined}
+<NavbarHome />
+{:else}
 <Navbar />
+{/if}
 
 <main>
 	<slot></slot>

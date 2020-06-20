@@ -41,6 +41,7 @@
   }
 </style>
 
+
 <li>
   <a href="/" on:click={closeDropdown}>
     <img src='LogoMobile.svg' />
