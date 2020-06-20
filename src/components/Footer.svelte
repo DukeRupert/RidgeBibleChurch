@@ -10,7 +10,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 1em;
+        padding: 1em 0;
         background: #2f2f2f;
     }
 

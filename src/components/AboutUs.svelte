@@ -59,7 +59,7 @@
 
         .col {
             width: 100%;
-            margin: 2em 0;
+            margin: 1em 0;
             padding: 0;
             align-content: unset;
         }
