@@ -6,7 +6,8 @@
 <style>
     /* 1em = 14px */
     div {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     h1 {
