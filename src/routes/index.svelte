@@ -1,9 +1,6 @@
 <script>
-	import AboutUs from '../components/AboutUs.svelte';
-
-  // Animations do not play on initial load by default. Condition change used to trigger logo animation.
-  let condition = false;
-	setTimeout(() => condition = true)
+  import AboutUs from '../components/AboutUs.svelte';
+  import AnimatedLogo from '../components/AnimatedLogo.svelte';
 </script>
 
 <style>
@@ -17,13 +14,28 @@
     margin: 0 0 1em 0;
   }
 
+  svg {
+    width: 100%;
+    margin:  0 0 1em 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100vw;
+  }
+
 </style>
 
 <svelte:head>
   <title>The Ridge Bible Church</title>
 </svelte:head>
 
+<div class='logo'>
+  <AnimatedLogo />
+</div>
 <div>
-  <img src="RidgeLogo.svg" alt='The Ridge Bible Church logo'/>
   <AboutUs />
 </div>
