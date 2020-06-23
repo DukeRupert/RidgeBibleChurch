@@ -10,6 +10,7 @@
 	import { quintOut } from 'svelte/easing';
 
     let dropdownOpen_value = false;
+    $: active = dropdownOpen_value;
 
     const unsubscribe = dropdownOpen.subscribe(value => {
 		dropdownOpen_value = value;
@@ -39,8 +40,12 @@
         padding: 0;
         margin: 0;
         background-color: rgba(1, 1, 1, 0);
-        -webkit-transition-duration: 1s; /* Safari */
-        transition-duration: 1s;
+        transition: all 0.4s ease-in;
+    }
+
+    /* Added when dropdown is clicked*/
+    .active {
+        transform: rotate(-90deg);
     }
 
     .menu {
@@ -58,22 +63,18 @@
     
 </style>
 
-{#if dropdownOpen_value}
-    <li>
-        <button on:click={toggle} style='transition: all 1s; transform: translate(90deg)'>
-            <Fa icon={faBars} size='2x'/>
-        </button>
-        <div class='menu' in:fly="{{duration: 500, x: 500, opacity: 0.5, easing: sineIn}}">
-            <DropdownItem title='Staff' route='/staff' onClick={toggle}/>
-            <DropdownItem title='Giving' route='/giving' onClick={toggle}/>
-            <DropdownItem title='Sermons' route='/sermons' onClick={toggle}/>
-            <DropdownItem title='Blog' route='/blog' onClick={toggle}/>
-            <DropdownItem title='Statement of Faith' route='/statement' onClick={toggle}/>
 
-        </div>
-    </li>
-{:else}
-    <li>
-        <button on:click={toggle}><Fa icon={faBars} size='2x'/></button>
-    </li>
-{/if}
+<li>
+    <button class='button' class:active on:click={toggle}>
+        <Fa icon={faBars} size='2x'/>
+    </button>
+    {#if dropdownOpen_value}
+    <div class='menu' transition:fly="{{duration: 400, x: 500, opacity: 0.8, easing: sineIn}}">
+        <DropdownItem title='Staff' route='/staff' onClick={toggle}/>
+        <DropdownItem title='Giving' route='/giving' onClick={toggle}/>
+        <DropdownItem title='Sermons' route='/sermons' onClick={toggle}/>
+        <DropdownItem title='Blog' route='/blog' onClick={toggle}/>
+        <DropdownItem title='Statement of Faith' route='/statement' onClick={toggle}/>
+    </div>
+    {/if}
+</li>
