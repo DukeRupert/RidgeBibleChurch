@@ -2,7 +2,7 @@
     import { goto } from '@sapper/app';
 
     export let src='/blankPic.png';
-    export let route='/alecPaul'
+    export let route=''
     export let name='Alec Paul';
     export let title='Lead Pastor';
     export let email='pastor@theridgebiblechurch.com';
@@ -57,6 +57,7 @@
         border-radius: 50px;
         background-color: lightgray;
         width: auto;
+        text-align: center;
     }
 
     /*Larger Screen*/
@@ -77,6 +78,8 @@
         <a href={link}>
             <p>{email}</p>
         </a>
+        {#if route !== ''}
         <a class="button" href={route}>View</a> 
+        {/if}
     </div>
 </div>
