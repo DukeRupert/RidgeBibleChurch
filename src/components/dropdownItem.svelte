@@ -22,14 +22,15 @@
     align-items: center;
     transition: background var(--speed);
     padding: 0.5rem;
-    color: var(--text-color);
+    color: white;
   }
 
   button {
     font-size: 17px;
     font-weight: bold;
     border: none;
-    background-color: white;
+    background-color:#2f2f2f;
+    color: white;
   }
       
 </style>

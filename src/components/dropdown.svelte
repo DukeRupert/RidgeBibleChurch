@@ -53,7 +53,7 @@
         height: calc(100% - 60px);
         box-sizing: border-box;
         border-top: 2px black solid;
-        background-color: white;
+        background-color: #2f2f2f;
     }
     
 </style>
