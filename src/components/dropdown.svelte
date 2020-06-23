@@ -1,21 +1,15 @@
 <script>
+    import DropdownItem from './dropdownItem.svelte';
     import Fa from 'svelte-fa';
     import { faBars } from '@fortawesome/free-solid-svg-icons';
-    import DropdownItem from './dropdownItem.svelte';
-    import { dropdownOpen } from '../store';
-    import { slide } from 'svelte/transition';
-    import { sineIn } from 'svelte/easing';
-    
     import { fly } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+    import { sineIn } from 'svelte/easing';
 
-    let dropdownOpen_value = false;
-    $: active = dropdownOpen_value;
+    import { dropdownOpen } from '../store';
+    //renaming store value to make markup more concise (ie. class:active)
+    $: active = $dropdownOpen; 
 
-    const unsubscribe = dropdownOpen.subscribe(value => {
-		dropdownOpen_value = value;
-    });
-    
+    //toggle dropdown status on click
     function toggle() {
         dropdownOpen.update(value => !value);
     }
@@ -46,6 +40,7 @@
     /* Added when dropdown is clicked*/
     .active {
         transform: rotate(-90deg);
+        color: #b60000;
     }
 
     .menu {
@@ -68,7 +63,7 @@
     <button class='button' class:active on:click={toggle}>
         <Fa icon={faBars} size='2x'/>
     </button>
-    {#if dropdownOpen_value}
+    {#if $dropdownOpen}
     <div class='menu' transition:fly="{{duration: 400, x: 500, opacity: 0.8, easing: sineIn}}">
         <DropdownItem title='Staff' route='/staff' onClick={toggle}/>
         <DropdownItem title='Giving' route='/giving' onClick={toggle}/>
