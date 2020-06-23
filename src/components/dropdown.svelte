@@ -28,9 +28,10 @@
         margin-left: 20px;
         margin-right: 20px;
         font-size: 17px;
+        transition: all 1s;
     }
 
-    button {
+    .button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -38,9 +39,11 @@
         padding: 0;
         margin: 0;
         background-color: rgba(1, 1, 1, 0);
-        transition: filter 300ms;
+        -webkit-transition-duration: 1s; /* Safari */
+        transition-duration: 1s;
     }
-    div {
+
+    .menu {
         position: fixed;
         overflow: hidden;
         z-index: 99;
@@ -57,8 +60,10 @@
 
 {#if dropdownOpen_value}
     <li>
-        <button on:click={toggle}><Fa icon={faBars} size='2x'/></button>
-        <div in:fly="{{duration: 500, x: 500, opacity: 0.5, easing: sineIn}}">
+        <button on:click={toggle} style='transition: all 1s; transform: translate(90deg)'>
+            <Fa icon={faBars} size='2x'/>
+        </button>
+        <div class='menu' in:fly="{{duration: 500, x: 500, opacity: 0.5, easing: sineIn}}">
             <DropdownItem title='Staff' route='/staff' onClick={toggle}/>
             <DropdownItem title='Giving' route='/giving' onClick={toggle}/>
             <DropdownItem title='Sermons' route='/sermons' onClick={toggle}/>

@@ -1,5 +1,8 @@
 <script>
+    import { goto } from '@sapper/app';
+
     export let src='/blankPic.png';
+    export let route='/alecPaul'
     export let name='Alec Paul';
     export let title='Lead Pastor';
     export let email='pastor@theridgebiblechurch.com';
@@ -47,7 +50,7 @@
         padding: 0;
     }
 
-    button {
+    .button {
         margin-top: 0.5em;
         padding: 0.5em 1em;
         border: none;
@@ -74,6 +77,6 @@
         <a href={link}>
             <p>{email}</p>
         </a>
-        <button type="button">View</button> 
+        <a class="button" href={route}>View</a> 
     </div>
 </div>

@@ -1,8 +1,9 @@
 <script>
-	import StaffCard from '../components/StaffCard.svelte';
+	import StaffCard from '../../components/StaffCard.svelte';
 
 	const alecPaul = {
 		src: '/alec.jpg', 
+		route: '/staff/alecPaul',
 		name: 'Alec Paul',
 		title: 'Pastor - Chairman',
 		email: 'pastor@theridgebiblechurch.com'
