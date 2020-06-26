@@ -27,7 +27,11 @@
 <div>
     <p>10609 234th St E | Graham, WA 98338</p>
     <p>(253) 847-2223 | info@theridgebiblechurch.com</p>
-    <p><Fa icon={faFacebookSquare} size='2x' /></p>
+    <a href='https://www.facebook.com/grahamcovenant.org'>
+        <p>
+            <Fa icon={faFacebookSquare} size='2x' />
+        </p>
+    </a>
     <p>&copy; 2020 The Ridge Bible Church</p>
     <span>Credits : Photo by <a href="https://unsplash.com/@julian_zett?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Julian Zett</a> on <a href="/images/nature/mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 </div>
