@@ -3,6 +3,10 @@
     	padding: 2em;
   	}
 
+	h1 {
+		font-weight: bold;
+	}
+
 	h2 {
 		margin-top: 2em;
 		font-size: 1.5em;
@@ -12,6 +16,18 @@
 	h2:first-of-type {
 		margin-top: 0.5em;
 	}
+
+	.italics {
+		font-style: italic;
+	}
+
+	@media only screen and (min-width: 655px) {
+
+	h1 {
+		font-size: 4em;
+	} 
+
+}
 </style>
 
 <svelte:head>
@@ -19,7 +35,13 @@
 </svelte:head>
 
 <div>
+	
+	<h1>Statement of Faith</h1>
+	
+	<p class='italics'> I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures... 1 Corinthians 15:3–4</p>
+	
 	<h2>God</h2>
+
 	<p>
 	We believe in one God (Isaiah 43:10-11; 44:6 & 8; James 2:19), Creator of all
 	things (Genesis 1:1; Isaiah 44:24; Colossians 1:16-17), holy, infinitely
