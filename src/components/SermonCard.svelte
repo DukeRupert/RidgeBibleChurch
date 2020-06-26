@@ -18,6 +18,8 @@
 
   .video {
     width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .time {
@@ -34,12 +36,21 @@
   h2 {
     font-size: 1em;
     margin: 0em;
+    margin-bottom: 0.25em;
   }
 
   p {
     margin: 0em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+  }
+
+  /*Larger Screen*/
+	@media only screen and (min-width: 655px) {
+
+    .wrapper {
+      width: 40vw;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
   }
 
 </style>
