@@ -44,7 +44,7 @@
 
 <li>
   <a href="/" on:click={closeDropdown}>
-    <img src='LogoMobile.svg' />
+    <img src='LogoMobile.svg' alt='Ridge Church logo'/>
   </a>
   <a href="/" on:click={closeDropdown} class="title">{title}</a>
 </li>

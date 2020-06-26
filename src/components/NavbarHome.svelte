@@ -10,8 +10,6 @@
     else {
       mobile = false;
     }
-  
-  export let segment;
 </script>
 
 <style>
