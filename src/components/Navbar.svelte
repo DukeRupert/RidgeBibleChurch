@@ -47,7 +47,9 @@
   <NavItem title="Staff" route='/staff'/>
   <NavItem title="Giving" route='/giving'/>
   <NavItem title="Sermons" route='/sermons'/>
-  <NavItem title="Blog" route='/blog'/>
+  <!--
+    <NavItem title="Blog" route='/blog'/>
+  -->
   <NavItem title="Statement of Faith" route='/statement'/>
 </nav>
 {/if}

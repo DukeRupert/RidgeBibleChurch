@@ -68,7 +68,7 @@
         <DropdownItem title='Staff' route='/staff' onClick={toggle}/>
         <DropdownItem title='Giving' route='/giving' onClick={toggle}/>
         <DropdownItem title='Sermons' route='/sermons' onClick={toggle}/>
-        <DropdownItem title='Blog' route='/blog' onClick={toggle}/>
+        <!--<DropdownItem title='Blog' route='/blog' onClick={toggle}/>-->
         <DropdownItem title='Statement of Faith' route='/statement' onClick={toggle}/>
     </div>
     {/if}

@@ -31,6 +31,7 @@
     border: none;
     background-color:#2f2f2f;
     color: white;
+    text-transform: uppercase;
   }
       
 </style>
