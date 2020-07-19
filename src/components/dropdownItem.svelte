@@ -9,8 +9,8 @@
 </script>
 
 
-<a href={route}>
-  <button on:click={toggle}>{title}</button>
+<a href={route} on:click={toggle}>
+  <button>{title}</button>
 </a>
 
 
