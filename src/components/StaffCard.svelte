@@ -12,7 +12,7 @@
 <style>
     div {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         max-width: 100%;
         margin: 1em 0;
     }
@@ -44,6 +44,7 @@
 
     .content {
         display: flex;
+        width: 45vw;
         flex-direction: column;
         justify-content: center;
 
@@ -65,6 +66,10 @@
 
     div {
         margin: 1em 1em;
+    }
+
+    .content {
+        width: 15vw;
     }
 }
 
