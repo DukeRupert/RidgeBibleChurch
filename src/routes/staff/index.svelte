@@ -2,7 +2,7 @@
 	import StaffCard from '../../components/StaffCard.svelte';
 
 	const alecPaul = {
-		src: '/alec.jpg', 
+		src: '/staff/Alec400px.png', 
 		route: '/staff/alecPaul',
 		name: 'Alec Paul',
 		title: 'Pastor - Chairman',
@@ -10,17 +10,17 @@
 	};
 
 	const dennisRiksen = {
-		//src: '/alec.jpg', 
+		src: '/staff/Denny400px.png', 
 		name: 'Dennis Riksen',
 		title: 'Vice-Chairman',
 		email: 'pastor@theridgebiblechurch.com'
 	};
 
 	const mattArmstrong = {
-		//src: '/alec.jpg', 
+		src: '/staff/Matt400px.png', 
 		name: 'Matt Armstrong',
 		title: 'Secretary',
-		email: 'pastor@theridgebiblechurch.com'
+		email: 'themsarmstrongs@live.com'
 	};
 
 	const kenKlubberud = {
@@ -38,7 +38,7 @@
 	};
 
 	const gregBennet = {
-		//src: '/alec.jpg', 
+		src: '/staff/Greg400px.png', 
 		name: 'Greg Bennett',
 		title: 'Elder',
 		email: 'pastor@theridgebiblechurch.com'
