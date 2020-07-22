@@ -10,10 +10,10 @@
 	};
 
 	const dennisRiksen = {
-		src: '/staff/Denny400px.png', 
+		src: '/staff/Dennis400px.png', 
 		name: 'Dennis Riksen',
 		title: 'Vice-Chairman',
-		email: 'pastor@theridgebiblechurch.com'
+		//email: 'pastor@theridgebiblechurch.com'
 	};
 
 	const mattArmstrong = {
@@ -27,21 +27,28 @@
 		//src: '/alec.jpg', 
 		name: 'Ken Klubberud',
 		title: 'Financial Officer',
-		email: 'pastor@theridgebiblechurch.com'
-	};
-
-	const daleForrester = {
-		//src: '/alec.jpg', 
-		name: 'Dale Forrester',
-		title: 'Elder',
-		email: 'pastor@theridgebiblechurch.com'
+		//email: 'pastor@theridgebiblechurch.com'
 	};
 
 	const gregBennet = {
 		src: '/staff/Greg400px.png', 
 		name: 'Greg Bennett',
 		title: 'Elder',
-		email: 'pastor@theridgebiblechurch.com'
+		//email: 'pastor@theridgebiblechurch.com'
+	};
+
+	const colinKertson = {
+		//src: '/alec.jpg', 
+		name: 'Colin Kertson',
+		title: 'Elder',
+		email: 'cpk2234@aol.com'
+	};
+
+	const daleForrester = {
+		//src: '/alec.jpg', 
+		name: 'Dale Forrester',
+		title: 'Elder',
+		//email: 'pastor@theridgebiblechurch.com'
 	};
 
 	const sueArmstrong = {
@@ -151,9 +158,10 @@
 		<StaffCard {...alecPaul}/>
 		<StaffCard {...dennisRiksen}/>
 		<StaffCard {...mattArmstrong}/>
+		<StaffCard {...colinKertson}/>
+		<StaffCard {...gregBennet}/>
 		<StaffCard {...kenKlubberud}/>
 		<StaffCard {...daleForrester}/>
-		<StaffCard {...gregBennet}/>
 	</div>
 
 	<h2>Deacons</h2>

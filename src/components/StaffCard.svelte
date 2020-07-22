@@ -5,7 +5,7 @@
     export let route=''
     export let name='Alec Paul';
     export let title='Lead Pastor';
-    export let email='pastor@theridgebiblechurch.com';
+    export let email='';
     let link = 'mailto:'.concat(email);
 </script>
 
