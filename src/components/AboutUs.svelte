@@ -1,7 +1,7 @@
 <script>
   let map =
     "https://maps.googleapis.com/maps/api/staticmap?center=10609+234th+St+E,+Graham,+WA+98338&markers=47.044315,-122.289675&zoom=13&scale=false&size=500x500&maptype=roadmap&key=AIzaSyAszovcVRw3UM8gOQNG1gc3D29L3iAakL8&format=png&visual_refresh=true";
-  let directions = "http://maps.google.com/?q=10609 234th St E,Graham,WA98338";
+  let directions = "https://goo.gl/maps/atKvzA6CZgkVAtTP8";
 </script>
 
 <style>
@@ -10,16 +10,6 @@
   div {
     display: flex;
     justify-content: space-around;
-  }
-
-  .col {
-    width: 25%;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
   }
 
   h1 {
@@ -45,6 +35,20 @@
 
   p {
     margin-block-start: 0;
+  }
+
+  .col {
+    width: 25%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  .link {
+    color: blue;
   }
 
   /* Smaller screens only */
@@ -80,8 +84,8 @@
     <h1>Location</h1>
     <a href="{directions}">
       <p>10609 234th St E, Graham, WA 98338</p>
+      <img src="{map}" alt="A map to the ridge bible church." />
     </a>
-    <img src="{map}" alt="A map to the ridge bible church." />
   </div>
   <div class="col">
     <h1>Contact Us</h1>
@@ -93,11 +97,11 @@
     <p><strong>Sunday</strong> &nbsp;&nbsp; 10:30am</p>
 
     <a href="tel:1-253-847-2223">
-      <p>253-847-2223</p>
+      <p class='link' >253-847-2223</p>
     </a>
 
     <a href="mailto: pastor@theridgebiblechurch.com">
-      <p>pastor@theridgebiblechurch.com</p>
+      <p class='link' >pastor@theridgebiblechurch.com</p>
     </a>
   </div>
 </div>
