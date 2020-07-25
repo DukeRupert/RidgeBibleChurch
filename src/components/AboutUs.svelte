@@ -78,7 +78,7 @@
       his son. This means that we are here to help you find peace and experience
       love.
     </p>
-    <img src='./churchRoad.jpg' alt='A view of the church building from the road.'/>
+    <img src='./building/summer600px.jpg' alt='A view of the church building from the road.'/>
   </div>
   <div class="col">
     <h1>Location</h1>

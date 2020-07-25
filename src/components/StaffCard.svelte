@@ -14,7 +14,8 @@
         display: flex;
         justify-content: space-around;
         max-width: 100%;
-        margin: 1em 0;
+        margin: 0.5em 0;
+        padding: 0.5em 0;
     }
 
     img {
