@@ -6,77 +6,66 @@
     route: "/staff/alecPaul",
     name: "Alec Paul",
     title: "Pastor - Chairman",
-    email: "pastor@theridgebiblechurch.com",
   };
 
   const dennisRiksen = {
     src: "/staff/Dennis400px.png",
     name: "Dennis Riksen",
     title: "Elder",
-    //email: 'pastor@theridgebiblechurch.com'
   };
 
   const mattArmstrong = {
     src: "/staff/Matt400px.png",
     name: "Matt Armstrong",
     title: "Secretary",
-    email: "themsarmstrongs@live.com",
   };
 
   const gregBennet = {
     src: "/staff/Greg400px.png",
     name: "Greg Bennett",
     title: "Elder",
-    //email: 'pastor@theridgebiblechurch.com'
   };
 
   const colinKertson = {
     //src: '/alec.jpg',
     name: "Colin Kertson",
     title: "Vice-Chairman",
-    email: "cpk2234@aol.com",
   };
 
   const sueArmstrong = {
     //src: '/alec.jpg',
     name: "Sue Armstrong",
     title: "Childrens's Ministry Director",
-    email: "pastor@theridgebiblechurch.com",
   };
 
   const reamenWilliams = {
     //src: '/alec.jpg',
     name: "Reamen Williams",
     title: "Youth Ministry Director",
-    email: "pastor@theridgebiblechurch.com",
   };
 
   const debbieNewton = {
     //src: '/alec.jpg',
     name: "Debbie Newton",
     title: "Church Secretary",
-    email: "pastor@theridgebiblechurch.com",
   };
 
   const edKyllonen = {
     //src: '/alec.jpg',
     name: "Ed Kyllonen",
     title: "Deacon",
-    email: "pastor@theridgebiblechurch.com",
   };
 
   const jessKady = {
     //src: '/alec.jpg',
     name: "Jess Kady",
     title: "Deacon",
-    email: "pastor@theridgebiblechurch.com",
   };
 
   const mattCrowell = {
     //src: '/alec.jpg',
     name: "Matt Crowell",
     title: "Deacon",
-    email: "pastor@theridgebiblechurch.com",
   };
 </script>
 
