@@ -78,13 +78,15 @@
       his son. This means that we are here to help you find peace and experience
       love.
     </p>
-    <img src='./building/summer600px.jpg' alt='A view of the church building from the road.'/>
+    <img
+      src="./building/summer600px.jpg"
+      alt="A view of the church building from the road." />
   </div>
   <div class="col">
     <h1>Location</h1>
-    <a href="{directions}">
+    <a href={directions}>
       <p>10609 234th St E, Graham, WA 98338</p>
-      <img src="{map}" alt="A map to the ridge bible church." />
+      <img src={map} alt="A map to the ridge bible church." />
     </a>
   </div>
   <div class="col">
@@ -92,16 +94,16 @@
 
     <h4>Services</h4>
     <p style="margin-block-end: 0.25em;">
-      <strong>Sunday</strong> &nbsp;&nbsp; 9:30am
+      <strong>Sunday</strong>
+      &nbsp;&nbsp; 9:30am
     </p>
-    <p><strong>Sunday</strong> &nbsp;&nbsp; 10:30am</p>
+    <p>
+      <strong>Sunday</strong>
+      &nbsp;&nbsp; 10:30am
+    </p>
 
     <a href="tel:1-253-847-2223">
-      <p class='link' >253-847-2223</p>
-    </a>
-
-    <a href="mailto: pastor@theridgebiblechurch.com">
-      <p class='link' >pastor@theridgebiblechurch.com</p>
+      <p class="link">253-847-2223</p>
     </a>
   </div>
 </div>
