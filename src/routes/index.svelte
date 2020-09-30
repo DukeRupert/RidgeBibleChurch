@@ -1,6 +1,7 @@
 <script>
   import AboutUs from "../components/AboutUs.svelte";
   import AnimatedLogo from "../components/AnimatedLogo.svelte";
+  export let segment;
 </script>
 
 <style>
@@ -25,5 +26,6 @@
   <AnimatedLogo />
 </div>
 <div>
+  <p>{segment}</p>
   <AboutUs />
 </div>

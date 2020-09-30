@@ -100,7 +100,7 @@
   /*Larger Screen*/
   @media only screen and (min-width: 655px) {
     div {
-      padding: 0 2em;
+      padding: 2em;
     }
 
     .wrapper {

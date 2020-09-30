@@ -42,6 +42,7 @@
   </nav>
 {:else}
   <nav>
+    <Logo />
     <NavItem title="Home" route="/" />
     <NavItem title="Staff" route="/staff" />
     <NavItem title="Giving" route="/giving" />
