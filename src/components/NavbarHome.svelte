@@ -46,7 +46,7 @@
     <NavItem title="Statement of Faith" route="/statement" />
     <NavItem
       primary
-      title="Log In"
+      title="Sign In"
       route="https://theridgebiblechurch.breezechms.com/login" />
   </nav>
 {/if}
