@@ -1,4 +1,6 @@
-<script></script>
+<script>
+
+</script>
 
 <style>
   div {
@@ -43,7 +45,7 @@
 </style>
 
 <div>
-  <img src="/alec.jpg" alt="Pastor Alec Paul" />
+  <img src="staff/Alec400px.png" alt="Pastor Alec Paul" />
   <h1>Pastor Alec Paul</h1>
   <p>
     Here is where you 3 to 4 sentences which acts as a very short introduction.

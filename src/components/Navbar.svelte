@@ -2,9 +2,12 @@
   import Logo from "./Logo.svelte";
   import NavItem from "./NavItem.svelte";
   import Dropdown from "./dropdown.svelte";
+
+  export let segment;
+
   let width;
   let mobile = false;
-  $: if (width < 450) {
+  $: if (width < 900) {
     mobile = true;
   } else {
     mobile = false;
@@ -13,23 +16,36 @@
 
 <style>
   nav {
-    height: 80px;
+    top: 0px;
+    height: auto;
     background-color: white;
     color: black;
     display: flex;
-    width: 100%;
-    padding: 1em;
-    box-sizing: border-box;
     justify-content: flex-end;
+    box-sizing: border-box;
     z-index: 101;
-    /* border-bottom: 1px solid red; */
   }
 
-  @media only screen and (max-width: 655px) {
-    nav {
-      position: relative;
-      top: 0px;
-    }
+  nav::after {
+    position: absolute;
+    content: "";
+    width: calc(100vw - 360px);
+    height: 2px;
+    background-color: var(--red);
+    display: block;
+    top: 88px;
+    right: 0px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  /* clearfix */
+  ul::after {
+    content: "";
+    display: block;
+    clear: both;
   }
 </style>
 
@@ -37,20 +53,24 @@
 
 {#if mobile}
   <nav>
-    <Logo />
-    <Dropdown />
+    {#if segment}
+      <Logo />
+    {/if}
+    <Dropdown {segment} />
   </nav>
 {:else}
   <nav>
     <Logo />
-    <NavItem title="Home" route="/" />
-    <NavItem title="Staff" route="/staff" />
-    <NavItem title="Giving" route="/giving" />
-    <NavItem title="Sermons" route="/sermons" />
-    <NavItem title="Statement of Faith" route="/statement" />
-    <NavItem
-      primary
-      title="Sign In"
-      route="https://theridgebiblechurch.breezechms.com/login" />
+    <ul>
+      <NavItem title="Staff" route="staff" {segment} />
+      <NavItem title="Giving" route="giving" {segment} />
+      <NavItem title="Sermons" route="sermons" {segment} />
+      <NavItem title="Statement of Faith" route="statement" {segment} />
+      <NavItem
+        primary
+        title="Sign In"
+        route="https://theridgebiblechurch.breezechms.com/login"
+        {segment} />
+    </ul>
   </nav>
 {/if}

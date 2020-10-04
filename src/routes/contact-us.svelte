@@ -2,7 +2,24 @@
   import Button from "../components/Button.svelte";
 </script>
 
-<section>
+<style>
+  div {
+    /* height: 70vh; */
+    width: 100%;
+  }
+
+  form {
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  input {
+    margin-bottom: 2em;
+  }
+</style>
+
+<div>
   <h1>CONTACT US</h1>
   <form
     name="contact"
@@ -24,4 +41,4 @@
     <textarea rows="6" type="text" name="message" required />
     <Button type="submit" label="Submit" center />
   </form>
-</section>
+</div>

@@ -3,6 +3,7 @@
   export let title = "";
   export let route;
   export let primary = false;
+  export let segment;
 
   function toggle() {
     dropdownOpen.update((value) => !value);
@@ -17,6 +18,10 @@
     transition: background var(--speed);
     padding: 1em;
     color: white;
+  }
+
+  [aria-current] {
+    color: var(--red);
   }
 
   button {
@@ -37,5 +42,7 @@
 </style>
 
 <a href={route} on:click={toggle}>
-  <button class:primary>{title}</button>
+  <button aria-current={segment === route ? 'page' : undefined} class:primary>
+    {title}
+  </button>
 </a>

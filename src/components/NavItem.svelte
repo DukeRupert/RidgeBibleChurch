@@ -4,31 +4,39 @@
   export let icon = "";
   export let route;
   export let primary = false;
+  export let segment;
 </script>
 
 <style>
-  li {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 22px;
-    transition: all 300ms;
-  }
-
-  a {
-    padding: 0 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 300ms;
-  }
-
   .primary {
     background-color: #b60000;
     border-radius: 20px;
     color: white;
   }
 
+  li {
+    display: block;
+    float: left;
+    margin: 1em 0.5em;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+    font-weight: bold;
+    color: black;
+    transition: all 200ms ease-in-out;
+  }
+
+  a:hover {
+    transform: scale(1.15, 1.15);
+  }
+  [aria-current] {
+    color: var(--red);
+  }
   @media only screen and (max-width: 900px) {
     li {
       font-size: 19px;
@@ -42,5 +50,10 @@
 </style>
 
 <li>
-  <a class:primary href={route}>{icon} {title}</a>
+  <a
+    class:primary
+    aria-current={segment === route ? 'page' : undefined}
+    href={route}>
+    {icon} {title}
+  </a>
 </li>

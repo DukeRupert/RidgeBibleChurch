@@ -119,25 +119,26 @@
   <title>Staff</title>
 </svelte:head>
 
-<div>
-  <h1>Our Leadership</h1>
+<section>
+  <div>
+    <h1>Our Leadership</h1>
 
-  <p>
-    It shall not be so among you. But whoever would be great among you must be
-    your servant... Matthew 20:26
-  </p>
+    <p>
+      It shall not be so among you. But whoever would be great among you must be
+      your servant... Matthew 20:26
+    </p>
 
-  <h2>Board of Elders</h2>
-  <hr />
-  <div class="wrapper">
-    <StaffCard {...alecPaul} />
-    <StaffCard {...colinKertson} />
-    <StaffCard {...dennisRiksen} />
-    <StaffCard {...mattArmstrong} />
-    <StaffCard {...gregBennet} />
-  </div>
+    <h2>Board of Elders</h2>
+    <hr />
+    <div class="wrapper">
+      <StaffCard {...alecPaul} />
+      <StaffCard {...colinKertson} />
+      <StaffCard {...dennisRiksen} />
+      <StaffCard {...mattArmstrong} />
+      <StaffCard {...gregBennet} />
+    </div>
 
-  <!-- <h2>Deacons</h2>
+    <!-- <h2>Deacons</h2>
   <hr />
   <div class="wrapper">
     <StaffCard {...edKyllonen} />
@@ -145,17 +146,19 @@
     <StaffCard {...mattCrowell} />
   </div> -->
 
-  <h2>Directors</h2>
-  <hr />
-  <div class="wrapper">
-    <StaffCard {...sueArmstrong} />
-    <StaffCard {...reamenWilliams} />
+    <h2>Directors</h2>
+    <hr />
+    <div class="wrapper">
+      <StaffCard {...sueArmstrong} />
+      <StaffCard {...reamenWilliams} />
+    </div>
+
+    <h2>Support</h2>
+    <hr />
+    <div class="wrapper">
+      <StaffCard {...debbieNewton} />
+    </div>
+
   </div>
 
-  <h2>Support</h2>
-  <hr />
-  <div class="wrapper">
-    <StaffCard {...debbieNewton} />
-  </div>
-
-</div>
+</section>

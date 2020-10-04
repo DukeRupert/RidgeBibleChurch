@@ -21,9 +21,11 @@
   <title>The Ridge Bible Church</title>
 </svelte:head>
 
-<div class="logo">
-  <AnimatedLogo />
-</div>
-<div>
-  <AboutUs />
-</div>
+<section>
+  <div class="logo">
+    <AnimatedLogo />
+  </div>
+  <div>
+    <AboutUs />
+  </div>
+</section>

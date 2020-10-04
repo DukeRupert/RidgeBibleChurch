@@ -1,32 +1,28 @@
 <script>
-	import Navbar from '../components/Navbar.svelte';
-	import NavbarHome from '../components/NavbarHome.svelte';
-	import Footer from '../components/Footer.svelte';
-	export let segment;
-	import { dropdownOpen } from '../store';
+  import Navbar from "../components/Navbar.svelte";
+  import Footer from "../components/Footer.svelte";
+  import { dropdownOpen } from "../store";
+
+  //renaming store value to make markup more concise (ie. class:active)
+  $: active = $dropdownOpen;
+
+  export let segment;
 </script>
 
 <style>
-	main {
-		position: relative;
-		background-color: white;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	.fixed {
-		position: fixed;
-	}
+  .active {
+    overflow: hidden;
+  }
 </style>
 
-{#if segment === undefined}
-<NavbarHome />
-{:else}
-<Navbar />
-{/if}
-
-<main class='{$dropdownOpen ? 'fixed' : undefined}'>
-	<slot></slot>
+<main class:active>
+  <header>
+    <Navbar {segment} />
+  </header>
+  <content>
+    <slot />
+  </content>
+  <footer>
+    <Footer />
+  </footer>
 </main>
- 
-<Footer />

@@ -35,12 +35,12 @@
       padding: 0 2em;
     }
 
-    .blankCard {
+    /* .blankCard {
       height: 0px;
       width: 40vw;
       margin-left: 2em;
       margin-right: 2em;
-    }
+    } */
   }
 </style>
 
@@ -54,17 +54,18 @@
   </script>
 </svelte:head>
 
-<div class="wrapper">
+<section>
+  <div class="wrapper">
 
-  <h1>Sermons</h1>
+    <h1>Sermons</h1>
 
-  <p>
-    But we preach Christ crucified, a stumbling block to Jews and folly to
-    Gentiles, but to those who are called, both Jews and Greeks, Christ the
-    power of God and the wisdom of God. 1 Corinthians 1:23-24
-  </p>
+    <p>
+      But we preach Christ crucified, a stumbling block to Jews and folly to
+      Gentiles, but to those who are called, both Jews and Greeks, Christ the
+      power of God and the wisdom of God. 1 Corinthians 1:23-24
+    </p>
 
-  <!-- <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>
 	<div class='container'>
 		<SermonCard 
 			url={'https://www.facebook.com/grahamcovenant.org/videos/301039404267923'} 
@@ -75,8 +76,9 @@
 		
 		<div class='blankCard'></div>
 	</div> -->
-  <div class="container">
-    <p>This site is under construction.</p>
-    <p>The Ridge Bible Church sermons will be located here soon.</p>
+    <div class="container">
+      <p>This site is under construction.</p>
+      <p>The Ridge Bible Church sermons will be located here soon.</p>
+    </div>
   </div>
-</div>
+</section>
