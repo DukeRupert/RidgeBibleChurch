@@ -3,7 +3,7 @@
 
   const alecPaul = {
     src: "/staff/Alec400px.png",
-    route: "/staff/alecPaul",
+    // route: "/staff/alecPaul",
     name: "Alec Paul",
     title: "Pastor - Chairman",
   };
@@ -27,25 +27,25 @@
   };
 
   const colinKertson = {
-    //src: '/alec.jpg',
+    src: "staff/Colin400px.png",
     name: "Colin Kertson",
     title: "Vice-Chairman",
   };
 
   const sueArmstrong = {
-    //src: '/alec.jpg',
+    src: "staff/Sue400px.png",
     name: "Sue Armstrong",
     title: "Childrens's Ministry Director",
   };
 
   const reamenWilliams = {
-    //src: '/alec.jpg',
+    src: "staff/Reamen400px.png",
     name: "Reamen Williams",
     title: "Youth Ministry Director",
   };
 
   const debbieNewton = {
-    //src: '/alec.jpg',
+    src: "staff/Debbie400px.png",
     name: "Debbie Newton",
     title: "Church Secretary",
   };
@@ -137,13 +137,13 @@
     <StaffCard {...gregBennet} />
   </div>
 
-  <h2>Deacons</h2>
+  <!-- <h2>Deacons</h2>
   <hr />
   <div class="wrapper">
     <StaffCard {...edKyllonen} />
     <StaffCard {...jessKady} />
     <StaffCard {...mattCrowell} />
-  </div>
+  </div> -->
 
   <h2>Directors</h2>
   <hr />
