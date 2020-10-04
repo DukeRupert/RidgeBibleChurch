@@ -99,7 +99,7 @@
     </p>
     <p>
       <strong>Sunday</strong>
-      &nbsp;&nbsp; 10:30am
+      &nbsp;&nbsp; 11:00am
     </p>
 
     <a href="tel:1-253-847-2223">

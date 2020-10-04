@@ -1,8 +1,4 @@
 <script>
-  import Fa from "svelte-fa";
-  import { faPaypal } from "@fortawesome/free-brands-svg-icons";
-  import { donation } from "../store";
-
   let title = "Giving";
 </script>
 
@@ -11,20 +7,8 @@
     padding: 2em;
   }
 
-  img {
-    width: 100%;
-  }
-
-  button {
-    padding: 0.5em 1em;
-  }
-
   h1 {
     font-weight: bold;
-  }
-
-  .italics {
-    font-style: italic;
   }
 
   /*Larger Screen*/
