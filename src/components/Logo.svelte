@@ -18,6 +18,12 @@
     margin-right: auto;
     margin-top: 10px;
   }
+
+  @media (max-width: 400px) {
+    img {
+      max-height: 80px;
+    }
+  }
 </style>
 
 <a href="/" on:click={closeDropdown}>

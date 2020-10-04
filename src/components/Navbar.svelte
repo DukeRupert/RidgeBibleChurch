@@ -47,6 +47,12 @@
     display: block;
     clear: both;
   }
+
+  @media (max-width: 400px) {
+    nav::after {
+      display: none;
+    }
+  }
 </style>
 
 <svelte:window bind:innerWidth={width} />
