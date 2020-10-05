@@ -39,7 +39,7 @@
     right: 0px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 1075px) {
     nav::after {
       display: none;
     }
