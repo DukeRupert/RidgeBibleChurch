@@ -42,6 +42,7 @@
     <h1>CONTACT US</h1>
     <form
       name="contact"
+      netlify
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field">
