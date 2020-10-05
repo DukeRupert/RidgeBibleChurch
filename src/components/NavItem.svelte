@@ -10,14 +10,13 @@
 <style>
   .primary {
     background-color: #b60000;
-    border-radius: 20px;
+    border-radius: 15px;
     color: white;
   }
 
   li {
     display: block;
     float: left;
-    margin: 1em 0.5em;
     font-size: 19px;
     text-transform: uppercase;
   }
@@ -40,11 +39,6 @@
   @media only screen and (max-width: 900px) {
     li {
       font-size: 19px;
-    }
-
-    a {
-      margin-left: 10px;
-      margin-right: 10px;
     }
   }
 </style>

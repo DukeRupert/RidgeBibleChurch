@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin-top: 80px;
     width: 100vw;
   }
 </style>

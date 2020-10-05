@@ -7,7 +7,7 @@
 
   let width;
   let mobile = false;
-  $: if (width < 900) {
+  $: if (width < 1075) {
     mobile = true;
   } else {
     mobile = false;
@@ -22,6 +22,8 @@
     color: black;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
     box-sizing: border-box;
     z-index: 101;
   }
@@ -37,17 +39,6 @@
     right: 0px;
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  /* clearfix */
-  ul::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
   @media (max-width: 400px) {
     nav::after {
       display: none;
@@ -59,24 +50,24 @@
 
 {#if mobile}
   <nav>
-    {#if segment}
-      <Logo />
-    {/if}
+
+    <Logo {segment} />
+
     <Dropdown {segment} />
   </nav>
 {:else}
   <nav>
-    <Logo />
-    <ul>
-      <NavItem title="Staff" route="staff" {segment} />
-      <NavItem title="Giving" route="giving" {segment} />
-      <NavItem title="Sermons" route="sermons" {segment} />
-      <NavItem title="Statement of Faith" route="statement" {segment} />
-      <NavItem
-        primary
-        title="Sign In"
-        route="https://theridgebiblechurch.breezechms.com/login"
-        {segment} />
-    </ul>
+
+    <Logo {segment} />
+    <NavItem title="Staff" route="staff" {segment} />
+    <NavItem title="Giving" route="giving" {segment} />
+    <NavItem title="Sermons" route="sermons" {segment} />
+    <NavItem title="Statement of Faith" route="statement" {segment} />
+    <NavItem
+      primary
+      title="Sign In"
+      route="https://theridgebiblechurch.breezechms.com/login"
+      {segment} />
+
   </nav>
 {/if}

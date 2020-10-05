@@ -19,13 +19,20 @@
     position: fixed;
     overflow: hidden;
     z-index: 99;
-    top: 80px;
+    top: 110px;
     left: 0;
     width: 100%;
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
+    padding-left: 1em;
     box-sizing: border-box;
-    border-top: 2px black solid;
+    /* border-top: 2px black solid; */
     background-color: #2f2f2f;
+  }
+
+  @media (max-width: 400px) {
+    .menu {
+      top: 80px;
+    }
   }
 </style>
 

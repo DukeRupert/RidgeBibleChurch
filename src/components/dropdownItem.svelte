@@ -17,27 +17,32 @@
     align-items: center;
     transition: background var(--speed);
     padding: 1em;
-    color: white;
+    color: black;
   }
 
   [aria-current] {
-    color: var(--red);
+    border-color: var(--red);
   }
 
   button {
     font-size: 17px;
     font-weight: bold;
-    padding: 0.75em 1.5em;
+    padding: 0.5em 0em;
     border: none;
-    border-radius: 20px;
-    background-color: #2f2f2f;
     color: white;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--grey);
+    border-bottom: 2px solid white;
   }
 
   .primary {
-    background-color: white;
-    color: #b60000;
+    background-color: var(--red);
+    padding: 0.75em 2em;
+    border-radius: 20px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
 

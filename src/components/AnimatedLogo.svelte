@@ -1,5 +1,5 @@
 <script>
-  import { theRidge, ridgeline, topRidgeline, bibleChurch } from "./shapes.js";
+  import { theRidge, ridgeline, bibleChurch } from "./shapes.js";
   import { sineIn, quartIn } from "svelte/easing";
   import { fade, draw } from "svelte/transition";
 

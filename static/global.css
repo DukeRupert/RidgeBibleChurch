@@ -24,8 +24,10 @@ body {
 	--navTextColor: white;
 	--navTextHighlight: var(--red);
 	--navSocial: white;
-	--buttonBackground: white;
-	--buttonBackgroundHover: white;
+	--buttonColor: white;
+	--buttonColorHover: black;
+	--buttonBackground: var(--red);
+	--buttonBackgroundHover: var(--red);
 	--hamburger: black;
 	--hamburgerActive: var(--red);
   
