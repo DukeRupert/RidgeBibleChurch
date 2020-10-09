@@ -22,7 +22,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 12em 0;
   }
 
   /*Larger Screen*/
@@ -64,20 +63,13 @@
       power of God and the wisdom of God. 1 Corinthians 1:23-24
     </p>
 
-    <!-- <div id="fb-root"></div>
-	<div class='container'>
-		<SermonCard 
-			url={'https://www.facebook.com/grahamcovenant.org/videos/301039404267923'} 
-			title={'Word of God Speak'}
-			subTitle={'Psalms 51 and 32'}
-			date={'21 June 2020'}
-		/>
-		
-		<div class='blankCard'></div>
-	</div> -->
+    <div id="fb-root" />
     <div class="container">
-      <p>This site is under construction.</p>
-      <p>The Ridge Bible Church sermons will be located here soon.</p>
+      <SermonCard
+        url={'https://www.facebook.com/114166370450267/videos/797831671046557'}
+        title={'The Ridge Bible Church Initial Launch'}
+        subTitle={'Psalms 51 and 32'}
+        date={'4 Oct 2020'} />
     </div>
   </div>
 </section>
