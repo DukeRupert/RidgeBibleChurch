@@ -1,5 +1,6 @@
 <script>
   export let label = "FixMe";
+  export let type;
   export let route = "";
   export let center = false;
 </script>
@@ -32,5 +33,5 @@
 </style>
 
 <a href={route} class:center>
-  <button>{label}</button>
+  <button {type}>{label}</button>
 </a>

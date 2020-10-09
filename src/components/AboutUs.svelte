@@ -2,6 +2,7 @@
   let map =
     "https://maps.googleapis.com/maps/api/staticmap?center=10609+234th+St+E,+Graham,+WA+98338&markers=47.044315,-122.289675&zoom=13&scale=false&size=500x500&maptype=roadmap&key=AIzaSyAszovcVRw3UM8gOQNG1gc3D29L3iAakL8&format=png&visual_refresh=true";
   let directions = "https://goo.gl/maps/atKvzA6CZgkVAtTP8";
+  import Button from "../components/Button.svelte";
 </script>
 
 <style>
@@ -105,5 +106,7 @@
     <a href="tel:1-253-847-2223">
       <p class="link">253-847-2223</p>
     </a>
+
+    <Button label="Contact Us" route="contact-us" center />
   </div>
 </div>

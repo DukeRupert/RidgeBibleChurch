@@ -47,7 +47,6 @@
 <svelte:head>
   <title>Sermons</title>
   <script
-    async
     defer
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2">
 
