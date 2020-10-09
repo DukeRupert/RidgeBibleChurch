@@ -58,25 +58,25 @@
   <div
     class="menu"
     transition:slide={{ duration: 400, opacity: 0.8, easing: quadOut }}>
-    <DropdownItem title="Staff" route="staff" onClick={toggle} {segment} />
-    <DropdownItem title="Giving" route="giving" onClick={toggle} {segment} />
-    <DropdownItem title="Sermons" route="sermons" onClick={toggle} {segment} />
+    <DropdownItem title="Staff" route="staff" on:click={toggle} {segment} />
+    <DropdownItem title="Giving" route="giving" on:click={toggle} {segment} />
+    <DropdownItem title="Sermons" route="sermons" on:click={toggle} {segment} />
 
     <DropdownItem
       title="Statement of Faith"
       route="statement"
-      onClick={toggle}
+      on:click={toggle}
       {segment} />
     <DropdownItem
       title="Contact Us"
       route="contact-us"
-      onClick={toggle}
+      on:click={toggle}
       {segment} />
     <DropdownItem
       primary
       title="Sign In"
       route="https://theridgebiblechurch.breezechms.com/login"
-      onClick={toggle}
+      on:click={toggle}
       {segment} />
   </div>
 {/if}

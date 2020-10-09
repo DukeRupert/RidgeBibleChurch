@@ -35,6 +35,7 @@
       your God which He has given you. Deuteronomy 16:17
     </p>
   </div>
+
   <div
     id="breeze_giving_embed"
     data-subdomain="theridgebiblechurch"
