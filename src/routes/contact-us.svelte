@@ -1,7 +1,3 @@
-<script>
-  import Button from "../components/Button.svelte";
-</script>
-
 <style>
   div {
     /* height: 70vh; */
@@ -32,6 +28,27 @@
     padding: 0.5em 0em;
   }
 
+  button {
+    background-color: var(--buttonBackground);
+    border: none;
+    border-radius: 15px;
+    color: var(--buttonColor);
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    transition: all 200ms ease-in-out;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  button:hover,
+  button:active {
+    transform: scale(1.15, 1.15);
+  }
+
   .hide {
     display: none;
   }
@@ -58,7 +75,7 @@
       <input type="email" name="email" required />
       <label>MESSAGE - Required</label>
       <textarea rows="6" type="text" name="message" required />
-      <Button type="submit" label="Submit" center />
+      <button type="submit">Contact Us</button>
     </form>
   </div>
 </section>
