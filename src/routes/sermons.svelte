@@ -33,13 +33,6 @@
     .container {
       padding: 0 2em;
     }
-
-    /* .blankCard {
-      height: 0px;
-      width: 40vw;
-      margin-left: 2em;
-      margin-right: 2em;
-    } */
   }
 </style>
 
@@ -68,7 +61,6 @@
       <SermonCard
         url={'https://www.facebook.com/114166370450267/videos/797831671046557'}
         title={'The Ridge Bible Church Initial Launch'}
-        subTitle={'Psalms 51 and 32'}
         date={'4 Oct 2020'} />
     </div>
   </div>
