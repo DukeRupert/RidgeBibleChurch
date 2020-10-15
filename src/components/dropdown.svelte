@@ -67,6 +67,7 @@
       route="statement"
       on:click={toggle}
       {segment} />
+    <DropdownItem title="Covid" route="covid" on:click={toggle} {segment} />
     <DropdownItem
       title="Contact Us"
       route="contact-us"

@@ -63,6 +63,7 @@
     <NavItem title="Giving" route="giving" {segment} />
     <NavItem title="Sermons" route="sermons" {segment} />
     <NavItem title="Statement of Faith" route="statement" {segment} />
+    <NavItem title="Covid" route="covid" {segment} />
     <NavItem
       primary
       title="Sign In"
