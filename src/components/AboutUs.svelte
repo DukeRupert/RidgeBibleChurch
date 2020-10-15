@@ -74,10 +74,11 @@
   <div class="col">
     <h1>About Us</h1>
     <p>
-      You are always welcome! The dress code is what you are wearing right now.
-      We believe that the Bible is the inspired word of God and that Jesus is
-      his son. This means that we are here to help you find peace and experience
-      love.
+      The Ridge Bible Church has roots in this community going back over 75
+      years. If you are seeking a church that values authentic worship and
+      expository preaching, you will feel right at home here. We welcome all
+      people who humbly acknowledge the universal need for more of God in their
+      lives. We have saved a seat for you!
     </p>
     <img
       src="./building/summer600px.jpg"
