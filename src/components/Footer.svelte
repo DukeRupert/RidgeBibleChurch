@@ -22,7 +22,9 @@
 
 <div>
   <p>10609 234th St E | Graham, WA 98338</p>
-  <p>(253) 847-2223</p>
+  <a href="tel:1-253-847-2223">
+    <p>(253) 847-2223</p>
+  </a>
   <a href="https://www.facebook.com/The-Ridge-Bible-Church-114166370450267/">
     <p>
       <Fa icon={faFacebookSquare} size="2x" />
