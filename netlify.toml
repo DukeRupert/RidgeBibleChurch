@@ -1,0 +1,21 @@
+# Settings in the [build] context are global and are applied to all contexts
+# unless otherwise overridden by more specific contexts.
+[build]
+
+  # Directory with the serverless Lambda functions to deploy to AWS.
+  functions = "functions/"
+
+
+[dev]
+    #Command to execute when you execute 'Netlify dev'
+   command = 'npm run dev'
+
+   
+# Production context: all deploys from the Production branch set in your site's
+# deploy contexts will inherit these settings.
+# [context.production]
+#   publish = "output/"
+#   command = "make publish"
+#   environment = { ACCESS_TOKEN = "super secret", NODE_VERSION = "8.0.1" }
+
+
