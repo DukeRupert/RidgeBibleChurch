@@ -59,6 +59,11 @@
     <div id="fb-root" />
     <div class="container">
       <SermonCard
+        url={'https://www.facebook.com/114166370450267/videos/768216880397943'}
+        title={'Hebrews, Part 3'}
+        date={'25 Oct 2020'} />
+
+      <SermonCard
         url={'https://www.facebook.com/114166370450267/videos/960573351097832'}
         title={'Introduction to Hebrews'}
         date={'11 Oct 2020'} />
