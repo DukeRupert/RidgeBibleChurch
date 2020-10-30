@@ -13,3 +13,6 @@ yarn-error.log
 
 # environment variables
 .env
+
+# node_modules for functions
+/functions/submission-created/node_modules/

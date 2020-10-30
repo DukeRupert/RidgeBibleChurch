@@ -16,6 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "compression": "^1.7.1",
+    "netlify-cli": "^2.67.0",
     "polka": "next",
     "sirv": "^0.4.0"
   },
