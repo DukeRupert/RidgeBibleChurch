@@ -10,6 +10,9 @@
     #Command to execute when you execute 'Netlify dev'
    command = 'npm run dev'
 
+[plugins]
+  package = "@netlify/plugin-functions-install-core"
+
    
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.
