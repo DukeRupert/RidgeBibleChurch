@@ -34,13 +34,6 @@
     margin: 0;
   }
 
-  p {
-    font-size: 0.75em;
-    color: blue;
-    padding: 0;
-    margin: 0;
-  }
-
   .content {
     display: flex;
     width: 45vw;
