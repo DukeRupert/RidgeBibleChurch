@@ -49,6 +49,11 @@
     transform: scale(1.15, 1.15);
   }
 
+  .req {
+    margin-left: 3px;
+    color: #f74545;
+  }
+
   .hide {
     display: none;
   }
@@ -69,11 +74,20 @@
           <input name="bot-field" />
         </label>
       </div>
-      <label>NAME - Optional</label>
-      <input type="text" name="name" />
-      <label>EMAIL - Required</label>
+      <label>
+        NAME
+        <span class="req">*</span>
+      </label>
+      <input type="text" name="name" required />
+      <label>
+        EMAIL
+        <span class="req">*</span>
+      </label>
       <input type="email" name="email" required />
-      <label>MESSAGE - Required</label>
+      <label>
+        MESSAGE
+        <span class="req">*</span>
+      </label>
       <textarea rows="6" type="text" name="message" required />
       <button type="submit">Contact Us</button>
     </form>
