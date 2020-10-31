@@ -18,7 +18,7 @@ const sendThankYouEmail = async (payload) => {
     // build email params object
     const mailData = {
       "From": process.env.FROM_ADDRESS,
-      "TemplateAlias" : "kcc-contact",
+      "TemplateAlias" : "trbc-contact",
       "TemplateModel" : model,
       "To": process.env.TO_ADDRESS,
     };
