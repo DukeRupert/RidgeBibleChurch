@@ -1,32 +1,60 @@
-const nodemailer = require('nodemailer');
+const postmark = require('postmark');
 
+const sendThankYouEmail = async (payload) => {
+  return new Promise((resolve, reject) => {
+    console.log('Sending the email');
+    const client = new postmark.ServerClient(process.env.POSTMARK);
 
-exports.handler = function(event, context, callback) {
+    let date = new Date();
+
+    // build template model object
+    const model = {
+      ...payload.human_fields,
+      "sitename" : payload.site_url,
+      "company_name" : "Firefly Software Engineering",
+      "Date" : date
+    };
     
-    let transporter =  nodemailer.createTransport({
-        service: "Postmark",
-        host: "smtp.postmarkapp.com",
-        auth: {
-            user: process.env.POSTMARK,
-            pass: process.env.POSTMARK,
-        }
+    // build email params object
+    const mailData = {
+      "From": process.env.FROM_ADDRESS,
+      "TemplateAlias" : "kcc-contact",
+      "TemplateModel" : model,
+      "To": process.env.TO_ADDRESS,
+    };
+    console.log(JSON.stringify(mailData));
+
+    // send email
+    client.sendEmailWithTemplate(mailData, err => {
+      if (err) return reject(err);
+
+      resolve();
     });
-    console.log(event.body);
+  });
+};
 
+exports.handler = async event => {
+  try {
+    // Grab form data from netlify
+    const data = JSON.parse(event.body).payload;
     
-        transporter.sendMail({
-            from: "firefly@loganwilliams.tech",
-            to: "logan@firefly.llc",
-            subject: "Test Email from Nodemailer",
-            text: "Hello World!"
-        }, function(error, info) {
-            if (error) {
-                callback(error);
-            } else {
-                callback(null, {
-                    statusCode: 200,
-                    body: "OK"
-                });
-            }
-        });
-}
+    // Build and send email
+    await sendThankYouEmail(data)
+
+    // Return statusCode, required by Netlify functions
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: "Email sent successfully"
+      })
+    };
+  } catch (e) {
+    console.log(e);
+    return {
+      statusCode: 500,
+      body: e.message
+    };
+  }
+};
+        
+        
