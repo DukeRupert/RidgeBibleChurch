@@ -60,9 +60,9 @@
     <div id="fb-root" />
     <div class="container">
       <SermonCard
-        url={'https://www.facebook.com/114166370450267/videos/768216880397943'}
-        title={'Hebrews, Part 3'}
-        date={'25 Oct 2020'} />
+        url={'https://www.facebook.com/114166370450267/videos/821473801953752'}
+        title={'Hebrews, Part 4'}
+        date={'1 Nov 2020'} />
 
       <p>Past videos can be found on our Facebook page.</p>
       <Button
