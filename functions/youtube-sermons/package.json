@@ -1,0 +1,14 @@
+{
+  "name": "youtube-sermons",
+  "version": "1.0.0",
+  "description": "Retreive sermon videos from YouTube",
+  "main": "youtube-sermons.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Logan Williams",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
