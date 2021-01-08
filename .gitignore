@@ -15,4 +15,4 @@ yarn-error.log
 .env
 
 # node_modules for functions
-/functions/submission-created/node_modules/
+/functions/*/node_modules/

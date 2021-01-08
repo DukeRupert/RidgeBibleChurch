@@ -1,6 +1,22 @@
 <script>
   import SermonCard from "../components/SermonCard.svelte";
   import Button from "../components/Button.svelte";
+  import SermonPlayer from "../components/SermonPlayer.svelte";
+
+  // Fetch sermons from youtube
+  const url = "/.netlify/functions/youtube-sermons";
+
+  async function fetchData() {
+    const res = await fetch(url);
+    const data = await res.json();
+
+    if (res.ok) {
+      console.log(data);
+      return data;
+    } else {
+      throw new Error(data);
+    }
+  }
 </script>
 
 <style>
@@ -17,12 +33,14 @@
   }
 
   .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1000 px;
+
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
   }
 
   /*Larger Screen*/
@@ -39,11 +57,6 @@
 
 <svelte:head>
   <title>Sermons</title>
-  <script
-    defer
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2">
-
-  </script>
 </svelte:head>
 
 <section>
@@ -56,19 +69,30 @@
       Gentiles, but to those who are called, both Jews and Greeks, Christ the
       power of God and the wisdom of God. 1 Corinthians 1:23-24
     </p>
+  </div>
+  <div class="container">
+    {#await fetchData()}
+      <p>loading</p>
+    {:then sermons}
+      {#each sermons as sermon}
+        {#if sermon.kind === 'youtube#video'}
+          <SermonCard
+            id={sermon.id}
+            date={sermon.info.date}
+            title={sermon.info.title}
+            description={sermon.description}
+            type={sermon.info.type} />
+        {/if}
+      {/each}
+    {:catch error}
+      <p style="color: red">{error.message}</p>
+    {/await}
 
-    <div id="fb-root" />
-    <div class="container">
-      <SermonCard
-        url={'https://www.facebook.com/114166370450267/videos/821473801953752'}
-        title={'Hebrews, Part 4'}
-        date={'1 Nov 2020'} />
-
-      <p>Past videos can be found on our Facebook page.</p>
-      <Button
-        label="Archive"
-        route="https://www.facebook.com/The-Ridge-Bible-Church-114166370450267/" />
-
-    </div>
+  </div>
+  <p>Past videos can be found on our Facebook page.</p>
+  <div class="wrapper">
+    <Button
+      label="Archive"
+      route="https://www.youtube.com/channel/UClnCId37ib0qSFxCqnXnbvQ" />
   </div>
 </section>

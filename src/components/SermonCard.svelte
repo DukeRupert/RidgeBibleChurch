@@ -1,70 +1,111 @@
 <script>
-  export let url = '';
-  export let title = '';
-  export let subTitle = '';
-  export let date = '';
-  export let description = '';
+  import Button from "./Button.svelte";
+  export let id = "";
+  export let title = "";
+  export let date = "";
+  export let description = "";
 </script>
 
 <style>
-  .wrapper {
+  .card {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid;
+    border-color: var(--textColor);
+    padding: 1em 2%;
+  }
+
+  .date {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    width: 30%;
+    justify-content: center;
     align-items: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    text-align: center;
   }
 
-  .video {
+  .day {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    height: 70%;
   }
 
-  .time {
-    color: gray;
+  .monthYear {
+    font-size: 0.75em;
   }
 
-  h1 {
-		font-size: 1.5em;
-		font-weight: bold;
-    margin: 0em;
-    margin-bottom: 0.25em;
-	}
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    text-align: left;
+  }
 
-  h2 {
+  .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button-container :global(.button) {
+    padding: 0.5em 2em;
     font-size: 1em;
-    margin: 0em;
-    margin-bottom: 0.25em;
+    margin-top: 1em;
+    margin-bottom: 0;
   }
 
   p {
     margin: 0em;
   }
 
-  /*Larger Screen*/
-	@media only screen and (min-width: 655px) {
-
-    .wrapper {
-      width: 40vw;
-      margin-left: 2em;
-      margin-right: 2em;
-    }
+  .primary-text {
+    font-size: 1.5em;
+    font-weight: bold;
   }
 
+  .date-text {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  /*Larger Screen*/
+  @media only screen and (min-width: 655px) {
+    .date {
+      width: 20%;
+    }
+
+    .title {
+      width: 50%;
+    }
+    .button-container {
+      width: 30%;
+    }
+  }
 </style>
 
-<div class="wrapper">
-  <h1>{title}</h1>
-  <h2>{subTitle}</h2>
-  <p class="time">{date}</p>
-  <div class='video'>
-    <div
-      class="fb-video"
-      data-href="{url}"
-      data-allowfullscreen="true"
-    ></div>
+<div class="card">
+  <div class="date">
+    <div class="date">
+      <div class="day">
+        <p class="date-text">{date.day}</p>
+      </div>
+      <div class="monthYear">
+        <p>{date.month} 20{date.year}</p>
+      </div>
+    </div>
   </div>
-  <p>{description}</p>
+  <div class="title">
+    <p class="primary-text">{title}</p>
+    <p>{description}</p>
+  </div>
+  <div class="button-container">
+    <Button
+      label="Watch"
+      route="https://www.youtube.com/watch?v={id}"
+      class="button" />
+  </div>
 </div>

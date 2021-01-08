@@ -1,12 +1,10 @@
 <script>
   export let label = "FixMe";
-  export let type;
   export let route = "";
-  export let center = false;
 </script>
 
 <style>
-  button {
+  a {
     background-color: var(--buttonBackground);
     border: none;
     border-radius: 15px;
@@ -22,8 +20,8 @@
     margin-bottom: 20px;
   }
 
-  button:hover,
-  button:active {
+  a:hover,
+  a:active {
     transform: scale(1.15, 1.15);
   }
 
@@ -32,6 +30,4 @@
   }
 </style>
 
-<a href={route} class:center>
-  <button {type}>{label}</button>
-</a>
+<a href={route} class={$$props.class}>{label}</a>
