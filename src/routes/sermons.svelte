@@ -89,7 +89,7 @@
     {/await}
 
   </div>
-  <p>Past videos can be found on our Facebook page.</p>
+  <p>Past videos can be found on our channel.</p>
   <div class="wrapper">
     <Button
       label="Archive"

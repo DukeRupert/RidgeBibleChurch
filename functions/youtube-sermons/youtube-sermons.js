@@ -28,7 +28,7 @@ exports.handler = (event, context, callback) => {
       channelId : "UClnCId37ib0qSFxCqnXnbvQ",
       part : "snippet, id",
       order : "date",
-      maxResults : "20"
+      maxResults : "14"
     },
   }).then( ({ data: { items }}) => {
     callback(null, {
