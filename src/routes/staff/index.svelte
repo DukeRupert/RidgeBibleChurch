@@ -32,11 +32,11 @@
     title: "Vice-Chairman",
   };
 
-  const sueArmstrong = {
-    src: "staff/Sue400px.png",
-    name: "Sue Armstrong",
-    title: "Childrens's Ministry Director",
-  };
+  // const sueArmstrong = {
+  //   src: "staff/Sue400px.png",
+  //   name: "Sue Armstrong",
+  //   title: "Childrens's Ministry Director",
+  // };
 
   const reamenWilliams = {
     src: "staff/Reamen400px.png",
@@ -50,23 +50,23 @@
     title: "Church Secretary",
   };
 
-  const edKyllonen = {
-    //src: '/alec.jpg',
-    name: "Ed Kyllonen",
-    title: "Deacon",
-  };
+  // const edKyllonen = {
+  //   //src: '/alec.jpg',
+  //   name: "Ed Kyllonen",
+  //   title: "Deacon",
+  // };
 
-  const jessKady = {
-    //src: '/alec.jpg',
-    name: "Jess Kady",
-    title: "Deacon",
-  };
+  // const jessKady = {
+  //   //src: '/alec.jpg',
+  //   name: "Jess Kady",
+  //   title: "Deacon",
+  // };
 
-  const mattCrowell = {
-    //src: '/alec.jpg',
-    name: "Matt Crowell",
-    title: "Deacon",
-  };
+  // const mattCrowell = {
+  //   //src: '/alec.jpg',
+  //   name: "Matt Crowell",
+  //   title: "Deacon",
+  // };
 </script>
 
 <style>
@@ -149,7 +149,7 @@
     <h2>Directors</h2>
     <hr />
     <div class="wrapper">
-      <StaffCard {...sueArmstrong} />
+      <!-- <StaffCard {...sueArmstrong} /> -->
       <StaffCard {...reamenWilliams} />
     </div>
 
