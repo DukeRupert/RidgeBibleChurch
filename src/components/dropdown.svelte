@@ -14,6 +14,56 @@
   }
 </script>
 
+<svelte:head>
+  {#if active}
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
+  {/if}
+</svelte:head>
+
+<button
+  on:click={toggle}
+  class="hamburger hamburger--collapse {active ? 'is-active' : ''}"
+  type="button"
+>
+  <span class="hamburger-box">
+    <span class="hamburger-inner" />
+  </span>
+</button>
+{#if $dropdownOpen}
+  <div
+    class="menu"
+    transition:slide={{ duration: 400, opacity: 0.8, easing: quadOut }}
+  >
+    <DropdownItem title="Staff" route="staff" on:click={toggle} {segment} />
+    <DropdownItem title="Giving" route="giving" on:click={toggle} {segment} />
+    <DropdownItem title="Sermons" route="sermons" on:click={toggle} {segment} />
+
+    <DropdownItem
+      title="Statement of Faith"
+      route="statement"
+      on:click={toggle}
+      {segment}
+    />
+    <DropdownItem
+      title="Contact Us"
+      route="contact-us"
+      on:click={toggle}
+      {segment}
+    />
+    <DropdownItem
+      primary
+      title="Sign In"
+      route="https://theridgebiblechurch.breezechms.com/login"
+      on:click={toggle}
+      {segment}
+    />
+  </div>
+{/if}
+
 <style>
   .menu {
     position: fixed;
@@ -35,49 +85,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  {#if active}
-    <style>
-      body {
-        overflow: hidden;
-      }
-    </style>
-  {/if}
-</svelte:head>
-
-<button
-  on:click={toggle}
-  class="hamburger hamburger--collapse {active ? 'is-active' : ''}"
-  type="button">
-  <span class="hamburger-box">
-    <span class="hamburger-inner" />
-  </span>
-</button>
-{#if $dropdownOpen}
-  <div
-    class="menu"
-    transition:slide={{ duration: 400, opacity: 0.8, easing: quadOut }}>
-    <DropdownItem title="Staff" route="staff" on:click={toggle} {segment} />
-    <DropdownItem title="Giving" route="giving" on:click={toggle} {segment} />
-    <DropdownItem title="Sermons" route="sermons" on:click={toggle} {segment} />
-
-    <DropdownItem
-      title="Statement of Faith"
-      route="statement"
-      on:click={toggle}
-      {segment} />
-    <DropdownItem title="Covid" route="covid" on:click={toggle} {segment} />
-    <DropdownItem
-      title="Contact Us"
-      route="contact-us"
-      on:click={toggle}
-      {segment} />
-    <DropdownItem
-      primary
-      title="Sign In"
-      route="https://theridgebiblechurch.breezechms.com/login"
-      on:click={toggle}
-      {segment} />
-  </div>
-{/if}

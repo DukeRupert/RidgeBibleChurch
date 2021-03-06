@@ -14,6 +14,33 @@
   }
 </script>
 
+<svelte:window bind:innerWidth={width} />
+
+{#if mobile}
+  <nav>
+
+    <Logo {segment} />
+
+    <Dropdown {segment} />
+  </nav>
+{:else}
+  <nav>
+
+    <Logo {segment} />
+    <NavItem title="Staff" route="staff" {segment} />
+    <NavItem title="Giving" route="giving" {segment} />
+    <NavItem title="Sermons" route="sermons" {segment} />
+    <NavItem title="Statement of Faith" route="statement" {segment} />
+    <NavItem
+      primary
+      title="Sign In"
+      route="https://theridgebiblechurch.breezechms.com/login"
+      {segment}
+    />
+
+  </nav>
+{/if}
+
 <style>
   nav {
     top: 0px;
@@ -45,30 +72,3 @@
     }
   }
 </style>
-
-<svelte:window bind:innerWidth={width} />
-
-{#if mobile}
-  <nav>
-
-    <Logo {segment} />
-
-    <Dropdown {segment} />
-  </nav>
-{:else}
-  <nav>
-
-    <Logo {segment} />
-    <NavItem title="Staff" route="staff" {segment} />
-    <NavItem title="Giving" route="giving" {segment} />
-    <NavItem title="Sermons" route="sermons" {segment} />
-    <NavItem title="Statement of Faith" route="statement" {segment} />
-    <NavItem title="Covid" route="covid" {segment} />
-    <NavItem
-      primary
-      title="Sign In"
-      route="https://theridgebiblechurch.breezechms.com/login"
-      {segment} />
-
-  </nav>
-{/if}
